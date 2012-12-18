@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0639DF7F1680A94000A71E79 /* CustomKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0639DF7E1680A94000A71E79 /* CustomKeyboard.m */; };
+		0639DF821680BD7500A71E79 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0639DF811680BD7500A71E79 /* CustomTextField.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -66,6 +67,8 @@
 /* Begin PBXFileReference section */
 		0639DF7D1680A94000A71E79 /* CustomKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomKeyboard.h; sourceTree = "<group>"; };
 		0639DF7E1680A94000A71E79 /* CustomKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomKeyboard.m; sourceTree = "<group>"; };
+		0639DF801680BD7500A71E79 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		0639DF811680BD7500A71E79 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0639DF801680BD7500A71E79 /* CustomTextField.h */,
+				0639DF811680BD7500A71E79 /* CustomTextField.m */,
 				0639DF7D1680A94000A71E79 /* CustomKeyboard.h */,
 				0639DF7E1680A94000A71E79 /* CustomKeyboard.m */,
 				301BF56E109A69640062928A /* www */,
@@ -416,6 +421,7 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				0639DF7F1680A94000A71E79 /* CustomKeyboard.m in Sources */,
+				0639DF821680BD7500A71E79 /* CustomTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

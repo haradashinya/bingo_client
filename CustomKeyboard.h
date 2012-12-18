@@ -7,6 +7,7 @@
 //
 
 #import <Cordova/CDV.h>
+#import "CustomTextField.h"
 
 @interface CustomKeyboard : CDVPlugin
 

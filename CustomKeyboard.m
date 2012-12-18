@@ -20,16 +20,25 @@
     
     if (![name isEqual:@""]){
         NSString *str = [NSString stringWithFormat:@"Hello %@",[arguments objectAtIndex:0]];
+        NSLog(@"str is %@",str);
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
         ret = [result toSuccessCallbackString:self.callbackId];
         NSLog(@"ok!");
         
         
         
-        UITextField *numberField = [[UITextField alloc] initWithFrame:CGRectMake(10,10, 120,44)];
+        UITextView *numberField = [[UITextView alloc] initWithFrame:CGRectMake(10,10, 120,44)];
+        numberField.inputAccessoryView = [[CustomTextField alloc] inputAccessoryView];
         [numberField setText:@"type some thing"];
-        [numberField setKeyboardType:UIKeyboardTypeNumberPad];
+        [numberField setKeyboardType:UIKeyboardTypeNumbersAndPunctuation];
         [[self.viewController view] addSubview:numberField];
+        
+        
+        UIButton *submitButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        submitButton.frame = CGRectMake(130,10,88,44);
+        
+//        [submitButton setTitle:@"Done" forState:UIControlStateNormal];
+        [[self.viewController view] addSubview:submitButton];
         
         
     }else{
