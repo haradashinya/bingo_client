@@ -33,7 +33,6 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicity call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        angular.bootstrap(document, ['ngView','ng-app']);
         app.receivedEvent('deviceready');
 
 
@@ -42,6 +41,24 @@ var app = {
     // launch enchant.js
     receivedEvent: function(id) {
       console.log("device ready");
+
+      var ret = "name";
+
+      cordova.exec(
+        function(ret){
+          console.log(ret);
+      },function(err){
+        alert(err);
+      },'api.hello','hello',[ret]);
+      console.log("called");
+
+
+
+
+
+
+
+
 
 
 
