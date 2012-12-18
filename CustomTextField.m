@@ -17,14 +17,24 @@
         CGRect frame = CGRectMake(0, 0, 100, 44);
         _inputAccessoryView = [[UIView alloc] initWithFrame:frame];
         _inputAccessoryView.backgroundColor = [UIColor clearColor];
-        UIButton *compButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        compButton.frame = CGRectMake(0,0,44,44);
-        [compButton setTitle:@"x" forState:UIControlStateNormal];
-        [compButton addTarget:self action:@selector(tappedEnter:) forControlEvents:UIControlEventTouchUpInside];
-        [_inputAccessoryView addSubview:compButton];
-        
+        __block int i = 0;
+        [@[@"x",@"sin",@"cos",@"tan",@"exp",@"^",@"logn()"] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+            
+            [self addButtonWithTitle:obj with:CGRectMake(44*i, 0, 44, 44)];
+            i++;
+        }];
     }
     return _inputAccessoryView;
+    
+}
+-(void)addButtonWithTitle:(NSString *)title with:(CGRect)frame
+{
+    
+        UIButton *compButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+        [compButton setTitle:title forState:UIControlStateNormal];
+        compButton.frame = frame;
+        [compButton addTarget:self action:@selector(tappedEnter:) forControlEvents:UIControlEventTouchUpInside];
+        [_inputAccessoryView addSubview:compButton];
     
 }
 
