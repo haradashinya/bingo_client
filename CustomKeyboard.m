@@ -34,11 +34,6 @@
         [[self.viewController view] addSubview:numberField];
         
         
-        UIButton *submitButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        submitButton.frame = CGRectMake(130,10,88,44);
-        
-//        [submitButton setTitle:@"Done" forState:UIControlStateNormal];
-        [[self.viewController view] addSubview:submitButton];
         
         
     }else{
