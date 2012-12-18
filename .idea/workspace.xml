@@ -4,7 +4,7 @@
     <list default="true" id="dde9c827-172f-4bbd-9084-7935535ace0e" name="Default" comment="" />
     <ignored path="bingo_client.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355830677824" ignored="false" />
+    <file path="/index.html" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355834427347" ignored="false" />
     <file path="/index.js" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355819188892" ignored="false" />
     <file path="/router.js" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355816295950" ignored="false" />
     <file path="/board.html" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355816437791" ignored="false" />
@@ -73,7 +73,7 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="29" selection-start="913" selection-end="913" vertical-scroll-proportion="0.5780347">
+            <state line="26" column="12" selection-start="946" selection-end="946" vertical-scroll-proportion="0.60115606">
               <folding />
             </state>
           </provider>
@@ -630,7 +630,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="913" selection-end="913" vertical-scroll-proportion="0.5780347">
+        <state line="26" column="12" selection-start="946" selection-end="946" vertical-scroll-proportion="0.60115606">
           <folding />
         </state>
       </provider>
