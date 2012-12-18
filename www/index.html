@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
 
 
         <link rel="stylesheet" type="text/css" href="css/index.css" />
@@ -11,22 +11,51 @@
     </head>
     <body>
 
-    <div id="main"></div>
+    <div id="graph"></div>
 
-
-
-
-
-
-
-    <script src="js/lib/zepto.js"></script>
-    <script src="js/lib/summy.js"></script>
-    <script src="js/router.js"></script>
     <script type="text/javascript" src="cordova-2.2.0.js"></script>
+    <script src="js/lib/plot.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
-
     </script>
+
+    <div class="sample large">
+        <div id="plotColors"></div>
+        <script type="text/javascript">
+            var f1 = function(x){ return x*x*x };
+            var f2 = function(x){ return x * Math.cos(x) };
+            var f3 = function(x){return Math.exp(x)};
+            f1.color="#000";
+            f2.color="#000";
+            f3.color="#000";
+            jsPlot(
+                    "plotColors",
+                    {
+                        Xmin : -10,
+                        Xmax : 10,
+                        Ymin : -10,
+                        Ymax : 10,
+                        canvasHeight : 320,
+                        canvasWidth : 480,
+                        gridVisible :true
+                    },
+                    [f1, f2,f3]
+            );
+        </script>
+    </div>
+
+    <script>
+        (function(){
+            var samples = document.querySelectorAll(".sample");
+            for(var i = 0; i < samples.length; i++){
+                var current = samples[i];
+            }
+        })();
+    </script>
+
+
+
+
     </body>
 </html>

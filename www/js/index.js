@@ -39,8 +39,15 @@ var app = {
 
     },
     // Update DOM on a Received Event
+    // launch enchant.js
     receivedEvent: function(id) {
       console.log("device ready");
-      console.log("woooo!");
+
+
+
+
+
     }
+
 };
+
