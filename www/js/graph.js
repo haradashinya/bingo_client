@@ -47,20 +47,32 @@ window.GraphController = function(){
   }
 };
 
+window.square = function(num){
+  return Math.pow(num,2);
+};
+
+window.cubic = function(num){
+  return Math.pow(num,3);
+};
+window.pow = function(num,exp){
+  return Math.pow(num,exp)
+
+};
 
 
-
-$("button").bind("click",function(){
+$(".draw-btn").bind("click",function(){
   console.log("clicked");
+  console.log("hello world");
+
   var str = $(".area").val();
   var func = new Function("x",str);
   window.draw(func);
-
-
-
-
 });
 
+
+$(".clear-btn").bind("click",function(){
+  window.clear();
+});
 
 
 

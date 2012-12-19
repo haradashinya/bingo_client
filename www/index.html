@@ -31,11 +31,13 @@
         <div class="span8">
             <textarea rows="3" class="area"></textarea>
             <button class="draw-exp-btn draw-btn">Draw!</button>
+            <button class="clear-btn">Clear!</button>
         </div>
     </div>
     <div class="sample large">
         <div id="plotColors"></div>
         <script type="text/javascript">
+            window.caches = [];
             var f1 = function(x){ return x*x*x };
             var f2 = function(x){ return Math.cos(x) * Math.sin(x) };
             var f3 = function(x){return Math.exp(x)};
@@ -46,6 +48,7 @@
             f3.color="#000";
 
             window.draw = function(expression){
+                window.caches.push(expression);
                 jsPlot(
                         "plotColors",
                         {
@@ -57,11 +60,15 @@
                             canvasWidth : width,
                             gridVisible :true
                         },
-                        [expression]
-//                        [f1, f2,f3]
+                        window.caches
                 );
                 return jsPlot;
 
+            };
+            window.clear = function(){
+                console.log("called clear");
+                window.caches = [];
+                window.draw();
             };
 
             var sampleExp = function(x){
