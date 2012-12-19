@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 
-@interface CustomTextField : NSObject
+@interface CustomTextField : NSObject <UITextViewDelegate>
 {
 }
 

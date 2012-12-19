@@ -38,7 +38,7 @@
         
         numberField = [[UITextView alloc] initWithFrame:CGRectMake(10,10, 120,44)];
         numberField.inputAccessoryView = [customTextField inputAccessoryView];
-        [numberField setText:@"type some thing"];
+        [numberField setText:@"f(x) = "];
         [numberField setKeyboardType:UIKeyboardTypeNumbersAndPunctuation];
         [[self.viewController view] addSubview:numberField];
         
