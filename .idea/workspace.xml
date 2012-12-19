@@ -4,7 +4,7 @@
     <list default="true" id="dde9c827-172f-4bbd-9084-7935535ace0e" name="Default" comment="" />
     <ignored path="bingo_client.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.html" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355906594653" ignored="false" />
+    <file path="/index.html" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355909740097" ignored="false" />
     <file path="/index.js" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355838936565" ignored="false" />
     <file path="/router.js" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355816295950" ignored="false" />
     <file path="/board.html" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355816437791" ignored="false" />
@@ -13,7 +13,8 @@
     <file path="/board.js" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355817867864" ignored="false" />
     <file path="/api.js" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355902297943" ignored="false" />
     <file path="/board.scss" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355906138571" ignored="false" />
-    <file path="/graph.js" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355906961709" ignored="false" />
+    <file path="/graph.js" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355910084284" ignored="false" />
+    <file path="/plot.js" changelist="dde9c827-172f-4bbd-9084-7935535ace0e" time="1355909052114" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="160" selection-start="671" selection-end="671" vertical-scroll-proportion="-5.12">
+            <state line="55" column="24" selection-start="2141" selection-end="2141" vertical-scroll-proportion="-24.32">
               <folding />
             </state>
           </provider>
@@ -85,8 +86,19 @@
       <file leaf-file-name="graph.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/graph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="17" selection-start="184" selection-end="184" vertical-scroll-proportion="0.13150685">
+            <state line="39" column="0" selection-start="774" selection-end="774" vertical-scroll-proportion="0.48219177">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plot.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/lib/plot.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="231" column="0" selection-start="8236" selection-end="8236" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,11 +149,11 @@
         <option value="$PROJECT_DIR$/www/js/board.js" />
         <option value="$PROJECT_DIR$/www/js/router.js" />
         <option value="$PROJECT_DIR$/www/js/lib/flotr2.js" />
-        <option value="$PROJECT_DIR$/www/js/lib/plot.js" />
         <option value="$PROJECT_DIR$/www/css/index.css" />
         <option value="$PROJECT_DIR$/www/js/index.js" />
         <option value="$PROJECT_DIR$/www/js/api.js" />
         <option value="$PROJECT_DIR$/www/scss/board.scss" />
+        <option value="$PROJECT_DIR$/www/js/lib/plot.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/graph.js" />
       </list>
@@ -584,15 +596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/lib/plot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="20" selection-start="7048" selection-end="7048" vertical-scroll-proportion="0.31241283">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/api.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="25" selection-start="90" selection-end="90" vertical-scroll-proportion="0.15342465">
@@ -614,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/lib/template.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="0" selection-start="1879" selection-end="1879" vertical-scroll-proportion="0.97109824">
@@ -628,16 +624,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="1371" selection-end="1371" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/lib/plot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="231" column="0" selection-start="8236" selection-end="8236" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="160" selection-start="671" selection-end="671" vertical-scroll-proportion="-5.12">
+        <state line="55" column="24" selection-start="2141" selection-end="2141" vertical-scroll-proportion="-24.32">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/graph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="184" selection-end="184" vertical-scroll-proportion="0.13150685">
+        <state line="39" column="0" selection-start="774" selection-end="774" vertical-scroll-proportion="0.48219177">
           <folding />
         </state>
       </provider>

@@ -55,11 +55,14 @@ window.jsPlot =
 // It also sets the size to the canvas with the width and height attributes of the object set.
       createCanvas : function(id, set){
         var e = d.getElementById(id);
-        var canvas = e.getElementsByTagName("canvas")[0];
+        var canvas;
+         canvas = e.getElementsByTagName("canvas")[0];
         if(!canvas){
           canvas = d.createElement("canvas");
           e.appendChild(canvas);
         }
+
+
         canvas.width=set.canvasWidth;
         canvas.height=set.canvasHeight;
         return canvas.getContext("2d");

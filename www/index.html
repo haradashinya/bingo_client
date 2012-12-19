@@ -15,26 +15,32 @@
         <!--<a class="button-main choice" href="#">hello</a>-->
 
     <!--</header>>-->
-    <div class="main-content">
-    <div id="graph"></div>
-    </div>
 
 
 
 
     <script type="text/javascript" src="cordova-2.2.0.js"></script>
+    <script type="text/javascript" src="js/lib/zepto.js"></script>
     <script type="text/javascript" src="js/lib/ratchet.js"></script>
+
     <script src="js/api.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="js/lib/plot.js"></script>
     <script src="js/graph.js"></script>
+
     <script type="text/javascript">
         app.initialize();
     </script>
 
+    <div class="main">
+        <button class="select-expression">Select Expression</button>
+    </div>
     <div class="sample large">
         <div id="plotColors"></div>
         <script type="text/javascript">
+            var graph = new Graph();
+            GraphController().setup();
+            GraphController().render();
             var f1 = function(x){ return x*x*x };
             var f2 = function(x){ return Math.cos(x) * Math.sin(x) };
             var f3 = function(x){return Math.exp(x)};
@@ -43,30 +49,31 @@
             f1.color="#000";
             f2.color="#000";
             f3.color="#000";
-            jsPlot(
-                    "plotColors",
-                    {
-                        Xmin : -10,
-                        Xmax : 100,
-                        Ymin : -10,
-                        Ymax : 10,
-                        canvasHeight : height,
-                        canvasWidth : width,
-                        gridVisible :true
-                    },
-                    [f1, f2,f3]
-            );
+
+            window.draw = function(){
+                jsPlot(
+                        "plotColors",
+                        {
+                            Xmin : -10,
+                            Xmax : 10,
+                            Ymin : -10,
+                            Ymax : 10,
+                            canvasHeight : height,
+                            canvasWidth : width/2,
+                            gridVisible :true
+                        },
+                        [f1, f2,f3]
+                );
+                return jsPlot;
+
+            };
+
+            window.draw();
+
         </script>
     </div>
 
-    <script>
-        (function(){
-            var samples = document.querySelectorAll(".sample");
-            for(var i = 0; i < samples.length; i++){
-                var current = samples[i];
-            }
-        })();
-    </script>
+
 
 
 
