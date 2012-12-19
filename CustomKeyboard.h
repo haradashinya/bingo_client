@@ -8,8 +8,9 @@
 
 #import <Cordova/CDV.h>
 #import "CustomTextField.h"
+#import "CustomInputView.h"
 
-@interface CustomKeyboard : CDVPlugin
+@interface CustomKeyboard : CDVPlugin<UITextViewDelegate>
 
 
 @property (nonatomic,strong) NSString *name;

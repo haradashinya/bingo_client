@@ -84,6 +84,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0639DF931681725200A71E79 /* customKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customKeyboardView.xib; sourceTree = "<group>"; };
 		1F2BECBE13F9785B00A93BF6 /* CDVBattery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVBattery.h; path = Classes/CDVBattery.h; sourceTree = "<group>"; };
 		1F2BECBF13F9785B00A93BF6 /* CDVBattery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVBattery.m; path = Classes/CDVBattery.m; sourceTree = "<group>"; };
 		1F3C04CC12BC247D004F9E10 /* CDVContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVContact.h; path = Classes/CDVContact.h; sourceTree = "<group>"; };
@@ -196,6 +197,7 @@
 		0867D691FE84028FC02AAC07 /* CordovaLib */ = {
 			isa = PBXGroup;
 			children = (
+				0639DF931681725200A71E79 /* customKeyboardView.xib */,
 				8887FD101090FB43009987E8 /* Classes */,
 				32C88DFF0371C24200C91783 /* Other Sources */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
@@ -493,9 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"ARCHS[sdk=iphoneos*]" = (
-					armv7,
-				);
+				"ARCHS[sdk=iphoneos*]" = armv7;
 				"ARCHS[sdk=iphoneos6.*]" = (
 					armv7,
 					armv7s,
@@ -524,9 +524,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"ARCHS[sdk=iphoneos*]" = (
-					armv7,
-				);
+				"ARCHS[sdk=iphoneos*]" = armv7;
 				"ARCHS[sdk=iphoneos6.*]" = (
 					armv7,
 					armv7s,
@@ -551,9 +549,7 @@
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"ARCHS[sdk=iphoneos*]" = (
-					armv7,
-				);
+				"ARCHS[sdk=iphoneos*]" = armv7;
 				"ARCHS[sdk=iphoneos6.*]" = (
 					armv7,
 					armv7s,
@@ -581,9 +577,7 @@
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"ARCHS[sdk=iphoneos*]" = (
-					armv7,
-				);
+				"ARCHS[sdk=iphoneos*]" = armv7;
 				"ARCHS[sdk=iphoneos6.*]" = (
 					armv7,
 					armv7s,

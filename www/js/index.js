@@ -48,9 +48,7 @@ var app = {
         function(ret){
           console.log(ret);
       },function(err){
-        alert(err);
       },'api.hello','hello',[ret]);
-      console.log("called");
 
 
 

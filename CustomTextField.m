@@ -7,10 +7,12 @@
 //
 
 #import "CustomTextField.h"
+#import "CustomInputView.h"
 
 @implementation CustomTextField
 {
     UIScrollView *scrollView;
+    CustomInputView *customInputView;
 }
 
 -(UIView *)inputAccessoryView
@@ -26,7 +28,7 @@
         
         __block int i = 0;
         [@[@"x",@"sin",@"cos",@"tan",@"exp",@"^",@"logn()",@"=",@"history",@"bookmark"] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            
+        
             [self addButtonWithTitle:obj with:CGRectMake(44*i, 0, 44, 44)];
             i++;
         }];
@@ -38,12 +40,7 @@
     scrollView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     scrollView.layer.borderWidth = 5.0f;
     [scrollView addSubview:_inputAccessoryView];
-    //    return _inputAccessoryView;
     return scrollView;
-    
-}
--(void)addBookmarkButton
-{
     
 }
 -(void)addButtonWithTitle:(NSString *)title with:(CGRect)frame

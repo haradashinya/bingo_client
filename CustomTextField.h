@@ -14,6 +14,8 @@
 {
 }
 
+
+-(void)loadInputView;
 @property (nonatomic,strong) UIView *inputAccessoryView;
 @property (nonatomic,strong) id delegate;
 

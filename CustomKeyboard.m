@@ -12,6 +12,7 @@
 {
     CustomTextField *customTextField;
     NSMutableString *inputText;
+    CustomInputView *customInputView;
     
     UITextView *numberField ;
 }
@@ -19,9 +20,11 @@
 -(void)hello:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options
 {
     inputText = [[NSMutableString alloc ] init];
+    customInputView = [[CustomInputView alloc] init];
     self.callbackId = [arguments pop];
     customTextField = [[CustomTextField alloc] init];
     customTextField.delegate = self;
+    
     
     NSString *name = [arguments objectAtIndex:0];
     CDVPluginResult *result;
@@ -36,20 +39,21 @@
         
         
         
+        
         numberField = [[UITextView alloc] initWithFrame:CGRectMake(10,10, 120,44)];
+        numberField.delegate = self;
         numberField.inputAccessoryView = [customTextField inputAccessoryView];
+        numberField.inputAccessoryView = [[CustomInputView alloc] init];
         [numberField setText:@"f(x) = "];
         [numberField setKeyboardType:UIKeyboardTypeNumbersAndPunctuation];
         [[self.viewController view] addSubview:numberField];
-        
-        
         
         
     }else{
         result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"名前をください！"];
         ret = [result toErrorCallbackString:self.callbackId];
     }
-    [self writeJavascript:ret];
+
 }
 
 -(void)tappedChar:(id)sender
@@ -65,4 +69,13 @@
 {
     NSLog(@"hello");
 }
+-(void)textViewDidEndEditing:(UITextView *)textView
+{
+    NSLog(@"called");
+    
+    NSString *message = [NSString stringWithFormat:@"window.API.eval(%@)",numberField.text];
+    NSLog(@"message is %@",message);
+    [self writeJavascript:message];
+}
+
 @end

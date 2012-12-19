@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0639DF7F1680A94000A71E79 /* CustomKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0639DF7E1680A94000A71E79 /* CustomKeyboard.m */; };
 		0639DF821680BD7500A71E79 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0639DF811680BD7500A71E79 /* CustomTextField.m */; };
+		0639DF961681732A00A71E79 /* customKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0639DF951681732A00A71E79 /* customKeyboardView.xib */; };
+		0639DFA01681778700A71E79 /* CustomInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0639DF9F1681778700A71E79 /* CustomInputView.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -69,6 +71,9 @@
 		0639DF7E1680A94000A71E79 /* CustomKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomKeyboard.m; sourceTree = "<group>"; };
 		0639DF801680BD7500A71E79 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
 		0639DF811680BD7500A71E79 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		0639DF951681732A00A71E79 /* customKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = customKeyboardView.xib; path = CordovaLib/customKeyboardView.xib; sourceTree = "<group>"; };
+		0639DF9E1681778700A71E79 /* CustomInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomInputView.h; path = CordovaLib/CustomInputView.h; sourceTree = "<group>"; };
+		0639DF9F1681778700A71E79 /* CustomInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomInputView.m; path = CordovaLib/CustomInputView.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -181,6 +186,9 @@
 				0639DF801680BD7500A71E79 /* CustomTextField.h */,
 				0639DF811680BD7500A71E79 /* CustomTextField.m */,
 				0639DF7D1680A94000A71E79 /* CustomKeyboard.h */,
+				0639DF9E1681778700A71E79 /* CustomInputView.h */,
+				0639DF9F1681778700A71E79 /* CustomInputView.m */,
+				0639DF951681732A00A71E79 /* customKeyboardView.xib */,
 				0639DF7E1680A94000A71E79 /* CustomKeyboard.m */,
 				301BF56E109A69640062928A /* www */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
@@ -390,6 +398,7 @@
 				3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */,
 				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
 				D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */,
+				0639DF961681732A00A71E79 /* customKeyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +431,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				0639DF7F1680A94000A71E79 /* CustomKeyboard.m in Sources */,
 				0639DF821680BD7500A71E79 /* CustomTextField.m in Sources */,
+				0639DFA01681778700A71E79 /* CustomInputView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
