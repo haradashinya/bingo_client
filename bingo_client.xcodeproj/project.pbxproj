@@ -11,6 +11,21 @@
 		0639DF821680BD7500A71E79 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0639DF811680BD7500A71E79 /* CustomTextField.m */; };
 		0639DF961681732A00A71E79 /* customKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0639DF951681732A00A71E79 /* customKeyboardView.xib */; };
 		0639DFA01681778700A71E79 /* CustomInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0639DF9F1681778700A71E79 /* CustomInputView.m */; };
+		0639DFA91681A74700A71E79 /* CLKeypad.m in Sources */ = {isa = PBXBuildFile; fileRef = 0639DFA61681A74700A71E79 /* CLKeypad.m */; };
+		0639DFAA1681A74700A71E79 /* CLToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0639DFA81681A74700A71E79 /* CLToolbar.m */; };
+		0639DFB91681A95100A71E79 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFAC1681A95100A71E79 /* backButton.png */; };
+		0639DFBA1681A95100A71E79 /* decimal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFAD1681A95100A71E79 /* decimal.png */; };
+		0639DFBB1681A95100A71E79 /* number0.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFAE1681A95100A71E79 /* number0.png */; };
+		0639DFBC1681A95100A71E79 /* number1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFAF1681A95100A71E79 /* number1.png */; };
+		0639DFBD1681A95100A71E79 /* number2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFB01681A95100A71E79 /* number2.png */; };
+		0639DFBE1681A95100A71E79 /* number3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFB11681A95100A71E79 /* number3.png */; };
+		0639DFBF1681A95100A71E79 /* number4.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFB21681A95100A71E79 /* number4.png */; };
+		0639DFC01681A95100A71E79 /* number5.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFB31681A95100A71E79 /* number5.png */; };
+		0639DFC11681A95100A71E79 /* number6.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFB41681A95100A71E79 /* number6.png */; };
+		0639DFC21681A95100A71E79 /* number7.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFB51681A95100A71E79 /* number7.png */; };
+		0639DFC31681A95100A71E79 /* number8.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFB61681A95100A71E79 /* number8.png */; };
+		0639DFC41681A95100A71E79 /* number9.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFB71681A95100A71E79 /* number9.png */; };
+		0639DFC51681A95100A71E79 /* toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0639DFB81681A95100A71E79 /* toolbar.png */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -74,6 +89,23 @@
 		0639DF951681732A00A71E79 /* customKeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = customKeyboardView.xib; path = CordovaLib/customKeyboardView.xib; sourceTree = "<group>"; };
 		0639DF9E1681778700A71E79 /* CustomInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomInputView.h; path = CordovaLib/CustomInputView.h; sourceTree = "<group>"; };
 		0639DF9F1681778700A71E79 /* CustomInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomInputView.m; path = CordovaLib/CustomInputView.m; sourceTree = "<group>"; };
+		0639DFA51681A74700A71E79 /* CLKeypad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLKeypad.h; sourceTree = "<group>"; };
+		0639DFA61681A74700A71E79 /* CLKeypad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLKeypad.m; sourceTree = "<group>"; };
+		0639DFA71681A74700A71E79 /* CLToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLToolbar.h; sourceTree = "<group>"; };
+		0639DFA81681A74700A71E79 /* CLToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLToolbar.m; sourceTree = "<group>"; };
+		0639DFAC1681A95100A71E79 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		0639DFAD1681A95100A71E79 /* decimal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = decimal.png; sourceTree = "<group>"; };
+		0639DFAE1681A95100A71E79 /* number0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number0.png; sourceTree = "<group>"; };
+		0639DFAF1681A95100A71E79 /* number1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number1.png; sourceTree = "<group>"; };
+		0639DFB01681A95100A71E79 /* number2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number2.png; sourceTree = "<group>"; };
+		0639DFB11681A95100A71E79 /* number3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number3.png; sourceTree = "<group>"; };
+		0639DFB21681A95100A71E79 /* number4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number4.png; sourceTree = "<group>"; };
+		0639DFB31681A95100A71E79 /* number5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number5.png; sourceTree = "<group>"; };
+		0639DFB41681A95100A71E79 /* number6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number6.png; sourceTree = "<group>"; };
+		0639DFB51681A95100A71E79 /* number7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number7.png; sourceTree = "<group>"; };
+		0639DFB61681A95100A71E79 /* number8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number8.png; sourceTree = "<group>"; };
+		0639DFB71681A95100A71E79 /* number9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number9.png; sourceTree = "<group>"; };
+		0639DFB81681A95100A71E79 /* toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolbar.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -143,6 +175,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0639DFAB1681A93B00A71E79 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0639DFAC1681A95100A71E79 /* backButton.png */,
+				0639DFAD1681A95100A71E79 /* decimal.png */,
+				0639DFAE1681A95100A71E79 /* number0.png */,
+				0639DFAF1681A95100A71E79 /* number1.png */,
+				0639DFB01681A95100A71E79 /* number2.png */,
+				0639DFB11681A95100A71E79 /* number3.png */,
+				0639DFB21681A95100A71E79 /* number4.png */,
+				0639DFB31681A95100A71E79 /* number5.png */,
+				0639DFB41681A95100A71E79 /* number6.png */,
+				0639DFB51681A95100A71E79 /* number7.png */,
+				0639DFB61681A95100A71E79 /* number8.png */,
+				0639DFB71681A95100A71E79 /* number9.png */,
+				0639DFB81681A95100A71E79 /* toolbar.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,12 +235,17 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0639DFA51681A74700A71E79 /* CLKeypad.h */,
+				0639DFA61681A74700A71E79 /* CLKeypad.m */,
+				0639DFA71681A74700A71E79 /* CLToolbar.h */,
+				0639DFA81681A74700A71E79 /* CLToolbar.m */,
 				0639DF801680BD7500A71E79 /* CustomTextField.h */,
 				0639DF811680BD7500A71E79 /* CustomTextField.m */,
 				0639DF7D1680A94000A71E79 /* CustomKeyboard.h */,
 				0639DF9E1681778700A71E79 /* CustomInputView.h */,
 				0639DF9F1681778700A71E79 /* CustomInputView.m */,
 				0639DF951681732A00A71E79 /* customKeyboardView.xib */,
+				0639DFAB1681A93B00A71E79 /* Resources */,
 				0639DF7E1680A94000A71E79 /* CustomKeyboard.m */,
 				301BF56E109A69640062928A /* www */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
@@ -399,6 +456,19 @@
 				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
 				D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */,
 				0639DF961681732A00A71E79 /* customKeyboardView.xib in Resources */,
+				0639DFB91681A95100A71E79 /* backButton.png in Resources */,
+				0639DFBA1681A95100A71E79 /* decimal.png in Resources */,
+				0639DFBB1681A95100A71E79 /* number0.png in Resources */,
+				0639DFBC1681A95100A71E79 /* number1.png in Resources */,
+				0639DFBD1681A95100A71E79 /* number2.png in Resources */,
+				0639DFBE1681A95100A71E79 /* number3.png in Resources */,
+				0639DFBF1681A95100A71E79 /* number4.png in Resources */,
+				0639DFC01681A95100A71E79 /* number5.png in Resources */,
+				0639DFC11681A95100A71E79 /* number6.png in Resources */,
+				0639DFC21681A95100A71E79 /* number7.png in Resources */,
+				0639DFC31681A95100A71E79 /* number8.png in Resources */,
+				0639DFC41681A95100A71E79 /* number9.png in Resources */,
+				0639DFC51681A95100A71E79 /* toolbar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +502,8 @@
 				0639DF7F1680A94000A71E79 /* CustomKeyboard.m in Sources */,
 				0639DF821680BD7500A71E79 /* CustomTextField.m in Sources */,
 				0639DFA01681778700A71E79 /* CustomInputView.m in Sources */,
+				0639DFA91681A74700A71E79 /* CLKeypad.m in Sources */,
+				0639DFAA1681A74700A71E79 /* CLToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

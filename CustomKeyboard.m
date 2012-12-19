@@ -13,8 +13,9 @@
     CustomTextField *customTextField;
     NSMutableString *inputText;
     CustomInputView *customInputView;
+    CLKeypad *keypad;
     
-    UITextView *numberField ;
+    UITextField *numberField ;
 }
 
 -(void)hello:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options
@@ -40,11 +41,11 @@
         
         
         
-        numberField = [[UITextView alloc] initWithFrame:CGRectMake(10,10, 120,44)];
+        numberField = [[UITextField alloc] initWithFrame:CGRectMake(10,10, 120,44)];
         numberField.delegate = self;
+        numberField.placeholder = @"F(x) = ";
         numberField.inputAccessoryView = [customTextField inputAccessoryView];
         numberField.inputAccessoryView = [[CustomInputView alloc] init];
-        [numberField setText:@"f(x) = "];
         [numberField setKeyboardType:UIKeyboardTypeNumbersAndPunctuation];
         [[self.viewController view] addSubview:numberField];
         
@@ -54,6 +55,20 @@
         ret = [result toErrorCallbackString:self.callbackId];
     }
 
+}
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    if (keypad == nil) {
+        keypad = [[CLKeypad alloc] initWithFrame:CGRectMake(0,10, 320,250)];
+        keypad.delegate = self;
+        textField.inputView = keypad;
+        [textField.inputView setBackgroundColor:[UIColor blackColor]];
+        if (keypad.toolbar == nil){
+            [textField setInputAccessoryView:keypad.toolbar];
+        }
+    }
+
+    
 }
 
 -(void)tappedChar:(id)sender
