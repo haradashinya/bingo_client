@@ -9,10 +9,19 @@
 #import "CustomKeyboard.h"
 
 @implementation CustomKeyboard
+{
+    CustomTextField *customTextField;
+    NSMutableString *inputText;
+    
+    UITextView *numberField ;
+}
 
 -(void)hello:(NSMutableArray *)arguments withDict:(NSMutableDictionary *)options
 {
+    inputText = [[NSMutableString alloc ] init];
     self.callbackId = [arguments pop];
+    customTextField = [[CustomTextField alloc] init];
+    customTextField.delegate = self;
     
     NSString *name = [arguments objectAtIndex:0];
     CDVPluginResult *result;
@@ -27,8 +36,8 @@
         
         
         
-        UITextView *numberField = [[UITextView alloc] initWithFrame:CGRectMake(10,10, 120,44)];
-        numberField.inputAccessoryView = [[CustomTextField alloc] inputAccessoryView];
+        numberField = [[UITextView alloc] initWithFrame:CGRectMake(10,10, 120,44)];
+        numberField.inputAccessoryView = [customTextField inputAccessoryView];
         [numberField setText:@"type some thing"];
         [numberField setKeyboardType:UIKeyboardTypeNumbersAndPunctuation];
         [[self.viewController view] addSubview:numberField];
@@ -41,5 +50,19 @@
         ret = [result toErrorCallbackString:self.callbackId];
     }
     [self writeJavascript:ret];
+}
+
+-(void)tappedChar:(id)sender
+{
+    NSString *tmp = numberField.text;
+    UIButton *btn = (UIButton *)sender;
+    NSString *ch = [btn.titleLabel text];
+    NSLog(@"ch is %@",ch);
+    NSString *res = [tmp stringByAppendingString:ch];
+    numberField.text = res;
+}
+-(void)hello
+{
+    NSLog(@"hello");
 }
 @end

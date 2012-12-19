@@ -33,14 +33,10 @@
         UIButton *compButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
         [compButton setTitle:title forState:UIControlStateNormal];
         compButton.frame = frame;
-        [compButton addTarget:self action:@selector(tappedEnter:) forControlEvents:UIControlEventTouchUpInside];
-        [_inputAccessoryView addSubview:compButton];
+        [compButton addTarget:self.delegate action:@selector(tappedChar:) forControlEvents:UIControlEventTouchUpInside];
+    [_inputAccessoryView addSubview:compButton];
+    [self.delegate hello];
     
 }
 
--(void)tappedEnter:(id)sender
-{
-    NSLog(@"tapped");
-    
-}
 @end
