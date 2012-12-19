@@ -25,7 +25,7 @@
         
         
         __block int i = 0;
-        [@[@"x",@"sin",@"cos",@"tan",@"exp",@"^",@"logn()",@"hello"] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [@[@"x",@"sin",@"cos",@"tan",@"exp",@"^",@"logn()",@"=",@"history",@"bookmark"] enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             
             [self addButtonWithTitle:obj with:CGRectMake(44*i, 0, 44, 44)];
             i++;
@@ -42,15 +42,19 @@
     return scrollView;
     
 }
+-(void)addBookmarkButton
+{
+    
+}
 -(void)addButtonWithTitle:(NSString *)title with:(CGRect)frame
 {
     
     
     UIButton *compButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-        [compButton setTitle:title forState:UIControlStateNormal];
-        compButton.frame = frame;
-        [compButton addTarget:self.delegate action:@selector(tappedChar:) forControlEvents:UIControlEventTouchUpInside];
-        [_inputAccessoryView addSubview:compButton];
+    [compButton setTitle:title forState:UIControlStateNormal];
+    compButton.frame = frame;
+    [compButton addTarget:self.delegate action:@selector(tappedChar:) forControlEvents:UIControlEventTouchUpInside];
+    [_inputAccessoryView addSubview:compButton];
     
     
 }
