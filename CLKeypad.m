@@ -27,49 +27,49 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
-    int offset_x = 0, offset_y = 0;
-    int width = 107, height = 55;
-    for (int i = 1; i <= 12; i++) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-        button.tag = i;
-        
-        if (i > 1) {
-            if (i%3 == 1) {
-                offset_x = 0;
-                offset_y += height;
-            }
-            else
-                offset_x += width;
-        }     
-        
-        //column 1
-        if (i%3 == 1) 
-            width = 107;
-        //column 2
-        else if (i%3 == 2) 
-            width = 106;
-        //column 3
-        else if (i%3 == 0) 
-            width = 107;
-        
-        button.frame = CGRectMake(offset_x, offset_y, width, height);
-        [button addTarget:self action:@selector(keypadPressed:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:button];
-        
-        //customization
-        button.backgroundColor = [UIColor clearColor];
-        UIImage *image;
-        if (i <= 9) 
-            image = [UIImage imageNamed:[NSString stringWithFormat:@"number%d.png",i]];
-        else if (i == 10)
-            image = [UIImage imageNamed:@"decimal.png"];
-        else if (i == 11) 
-            image = [UIImage imageNamed:@"number0.png"];
-        else if (i == 12)
-            image = [UIImage imageNamed:@"backButton.png"];
-        
-        [button setImage:image forState:UIControlStateNormal];
-    }
+//    int offset_x = 0, offset_y = 0;
+//    int width = 107, height = 55;
+//    for (int i = 1; i <= 12; i++) {
+//        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+//        button.tag = i;
+//        
+//        if (i > 1) {
+//            if (i%3 == 1) {
+//                offset_x = 0;
+//                offset_y += height;
+//            }
+//            else
+//                offset_x += width;
+//        }     
+//        
+//        //column 1
+//        if (i%3 == 1) 
+//            width = 107;
+//        //column 2
+//        else if (i%3 == 2) 
+//            width = 106;
+//        //column 3
+//        else if (i%3 == 0) 
+//            width = 107;
+//        
+//        button.frame = CGRectMake(offset_x, offset_y, width, height);
+//        [button addTarget:self action:@selector(keypadPressed:) forControlEvents:UIControlEventTouchUpInside];
+//        [self addSubview:button];
+//        
+//        //customization
+//        button.backgroundColor = [UIColor clearColor];
+//        UIImage *image;
+//        if (i <= 9) 
+//            image = [UIImage imageNamed:[NSString stringWithFormat:@"number%d.png",i]];
+//        else if (i == 10)
+//            image = [UIImage imageNamed:@"decimal.png"];
+//        else if (i == 11) 
+//            image = [UIImage imageNamed:@"number0.png"];
+//        else if (i == 12)
+//            image = [UIImage imageNamed:@"backButton.png"];
+//        
+//        [button setImage:image forState:UIControlStateNormal];
+//    }
 }
 
 - (void)keypadPressed:(id)sender {

@@ -15,7 +15,7 @@
 - (void)numberPressed:(NSInteger)number;
 
 @end
-@interface CLKeypad : UIView <CLToolbarDelegate> 
+@interface CLKeypad : UITableView <CLToolbarDelegate>
 
 @property (nonatomic, retain) CLToolbar *toolbar;
 @property (nonatomic, retain) id <CLKeypadDelegate> delegate;

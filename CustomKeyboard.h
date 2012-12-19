@@ -11,7 +11,7 @@
 #import "CustomInputView.h"
 #import "CLKeypad.h"
 
-@interface CustomKeyboard : CDVPlugin<UITextFieldDelegate,CLKeypadDelegate>
+@interface CustomKeyboard : CDVPlugin
 
 
 @property (nonatomic,strong) NSString *name;
