@@ -50,6 +50,17 @@ window.GraphController = function(){
 
 
 
+$("button").bind("click",function(){
+  console.log("clicked");
+  var str = $(".area").val();
+  var func = new Function("x",str);
+  window.draw(func);
+
+
+
+
+});
+
 
 
 

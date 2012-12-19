@@ -4,21 +4,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="format-detection" content="telephone=no" />
         <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />-->
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <link rel="stylesheet" type="text/css" href="css/ratchet.css"/>
+        <link rel="stylesheet" type="text/css" href="css/board.css"/>
         <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     </head>
     <body>
-
-    <!--<header class="bar-title">-->
-        <!--<h1 class="title">statGraph</h1>-->
-        <!--<a class="button-main choice" href="#">hello</a>-->
-
-    <!--</header>>-->
-
-
-
-
     <script type="text/javascript" src="cordova-2.2.0.js"></script>
     <script type="text/javascript" src="js/lib/zepto.js"></script>
     <script type="text/javascript" src="js/lib/ratchet.js"></script>
@@ -26,21 +18,24 @@
     <script src="js/api.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="js/lib/plot.js"></script>
-    <script src="js/graph.js"></script>
+
 
     <script type="text/javascript">
         app.initialize();
     </script>
 
-    <div class="main">
-        <button class="select-expression">Select Expression</button>
+    <div class="row-fluid main">
+        <div class="span4">
+            <button class="help">help</button>
+        </div>
+        <div class="span8">
+            <textarea rows="3" class="area"></textarea>
+            <button class="draw-exp-btn draw-btn">Draw!</button>
+        </div>
     </div>
     <div class="sample large">
         <div id="plotColors"></div>
         <script type="text/javascript">
-            var graph = new Graph();
-            GraphController().setup();
-            GraphController().render();
             var f1 = function(x){ return x*x*x };
             var f2 = function(x){ return Math.cos(x) * Math.sin(x) };
             var f3 = function(x){return Math.exp(x)};
@@ -50,7 +45,7 @@
             f2.color="#000";
             f3.color="#000";
 
-            window.draw = function(){
+            window.draw = function(expression){
                 jsPlot(
                         "plotColors",
                         {
@@ -59,16 +54,23 @@
                             Ymin : -10,
                             Ymax : 10,
                             canvasHeight : height,
-                            canvasWidth : width/2,
+                            canvasWidth : width,
                             gridVisible :true
                         },
-                        [f1, f2,f3]
+                        [expression]
+//                        [f1, f2,f3]
                 );
                 return jsPlot;
 
             };
 
-            window.draw();
+            var sampleExp = function(x){
+                return x + 1;
+            };
+            window.draw(sampleExp);
+
+
+
 
         </script>
     </div>
@@ -78,5 +80,6 @@
 
 
 
+        <script src="js/graph.js"></script>
     </body>
 </html>
